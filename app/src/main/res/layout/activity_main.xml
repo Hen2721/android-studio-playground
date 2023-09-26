@@ -64,9 +64,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintBottom_toTopOf="@id/button_login"/>
-
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_login"
+        app:cornerRadius="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -78,14 +78,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button_register"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_register"
         android:layout_width="match_parent"
+        app:cornerRadius="20dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:backgroundTint="#F0F1EE"
         android:layout_marginHorizontal="16dp"
         android:text="Register"
-        style="@style/ButtonSecondary"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/button_login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
